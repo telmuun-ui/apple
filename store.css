@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: rgba(245, 245, 247, 1);
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  height: 44px;
+
+  background-color: #f5f5f7cc;
+}
+#categories {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+}
+#search {
+  height: 14.08px;
+  width: 14.08px;
+}
+#apple {
+  height: 15px;
+  width: 15px;
+}
+#store {
+  height: 14.91px;
+  width: 12.94px;
+}
+.header2 {
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #1d1d1f;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.firstline {
+  display: flex;
+}
+.line1 {
+  display: flex;
+  gap: 32px;
+  margin-left: 140px;
+  margin-top: 80px;
+  font-family: "Inter", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+.word1 {
+  background: linear-gradient(90.43deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  background-clip: text;
+  color: transparent;
+}
+.word2 {
+  color: rgba(110, 110, 115, 1);
+}
+.line2 {
+  display: flex;
+}
