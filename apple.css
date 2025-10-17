@@ -682,3 +682,24 @@ h1 {
   scroll-snap-align: center;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 1000px) {
+  .nav-item {
+    display: none;
+  }
+  #header {
+    justify-content: space-between;
+  }
+}
+
+/* .FOR PHONE */
+@media only screen and (max-width: 767px) {
+  #herosection {
+    height: 650px;
+    background-image: url(./pro-table.png);
+  }
+  .nav-item {
+    justify-content: space-between;
+    display: flex;
+  }
+}
