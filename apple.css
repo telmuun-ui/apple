@@ -682,24 +682,29 @@ h1 {
   scroll-snap-align: center;
   object-fit: cover;
 }
+#searchstore {
+  display: flex;
+  gap: 24px;
+}
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .nav-item {
     display: none;
   }
+
   #header {
     justify-content: space-between;
   }
 }
 
-/* .FOR pad */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/* .FOR tablet */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
   #herosection {
     height: 650px;
     background-image: url(./pro-table.png);
   }
-  .nav-item {
-    justify-content: space-between;
-    display: flex;
+  #secondsection {
+    height: 650px;
+    background-image: url(./i16.png);
   }
 }
