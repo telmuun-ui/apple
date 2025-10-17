@@ -683,7 +683,7 @@ h1 {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .nav-item {
     display: none;
   }
@@ -692,8 +692,8 @@ h1 {
   }
 }
 
-/* .FOR PHONE */
-@media only screen and (max-width: 767px) {
+/* .FOR pad */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   #herosection {
     height: 650px;
     background-image: url(./pro-table.png);
