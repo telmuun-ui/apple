@@ -54,6 +54,7 @@ a {
   display: flex;
   flex-direction: column;
   background-position: center;
+  background-size: cover;
 }
 #texts1 {
   font-family: "Inter", sans-serif;
@@ -105,6 +106,7 @@ h4 {
   background-image: url(Background2.png);
   flex-direction: column;
   display: flex;
+  background-size: cover;
 }
 #texts2 {
   font-family: "Inter", sans-serif;
@@ -165,11 +167,16 @@ main {
   background-image: url(./figure.jpg);
   background-position: center;
   height: 692px;
-
+  background-size: cover;
   display: flex;
   flex-direction: column;
   object-fit: cover;
 }
+
+.thirdsection-tablet-text {
+  display: none;
+}
+
 #texts3 {
   font-family: "Inter", sans-serif;
   color: rgb(0, 0, 0);
@@ -211,7 +218,9 @@ main {
   flex-direction: column;
   gap: 12px;
 }
-
+#fourthsection {
+  gap: 16px;
+}
 .fourthsection-row {
   width: 100vw;
   display: flex;
@@ -219,6 +228,9 @@ main {
   position: relative;
 }
 
+#tabletsection1 {
+  display: none;
+}
 #section1 {
   background-image: url(./pic1.png);
   background-position: center;
@@ -255,6 +267,9 @@ main {
   flex-direction: column;
   gap: 16px;
 }
+#tabletsection3 {
+  display: none;
+}
 #multisections2 {
   display: flex;
   flex-direction: column;
@@ -273,6 +288,9 @@ main {
   gap: 10px;
   justify-content: end;
 }
+#tabletsection4 {
+  display: none;
+}
 #section5 {
   background-image: url(./pic5.png);
   background-position: center;
@@ -286,6 +304,9 @@ main {
   gap: 10px;
   justify-content: start;
 }
+#tabletsection5 {
+  display: none;
+}
 #section6 {
   background-image: url(./pic6.png);
   background-position: center;
@@ -294,11 +315,15 @@ main {
   height: 580px;
   flex: 1;
 }
+#tabletsection6 {
+  display: none;
+}
 #fourthsection {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  /* gap: 12px; */
 }
+
 #title1 {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -451,6 +476,7 @@ h1 {
 #trade {
   font-size: 32px;
   font-weight: 700;
+  white-space: nowrap;
 }
 #get {
   display: flex;
@@ -682,9 +708,15 @@ h1 {
   scroll-snap-align: center;
   object-fit: cover;
 }
+#imagecontainer22 {
+  display: none;
+}
 #searchstore {
   display: flex;
   gap: 24px;
+}
+#menu {
+  display: none;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -693,38 +725,130 @@ h1 {
   }
 
   #header {
+    display: flex;
     justify-content: space-between;
+  }
+  #menu {
+    display: flex;
   }
 }
 
 /* .FOR tablet */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
+  #apple {
+    display: flex;
+    padding-left: 17px;
+  }
   #herosection {
     height: 650px;
+    width: 100vw;
     background-image: url(./pro-table.png);
+    background-repeat: no-repeat;
   }
   #secondsection {
     height: 650px;
     background-image: url(./i16.png);
+    background-repeat: no-repeat;
   }
   #thirdsection {
-    background-image: url(./figure.jpg);
+    background-image: url(./ipadthird.jpg);
     background-position: center;
     height: 650px;
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
     object-fit: cover;
   }
-  .fourthsection-row {
-    width: 100vw;
+  #tabsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+  }
+  #ipad {
+    height: 33px;
+    display: flex;
+  }
+  #high1 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+    margin-top: 58px;
+  }
+  #click1 {
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+  }
+  #touch1 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
     display: flex;
     gap: 16px;
-    position: relative;
   }
+  #t1 {
+    color: #ffffff;
+    background-color: #0071e3;
+    border-radius: 999px;
+    height: 36px;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #t2 {
+    color: #2997ff;
+    background: none;
+    border-radius: 999px;
+    border: #2997ff solid;
+    height: 36px;
+    width: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #colorful {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 
+    background: linear-gradient(
+      90.43deg,
+      #0090f7 0%,
+      #ba62fc 33.33%,
+      #f2416b 66.67%,
+      #f55600 100%
+    );
+    background-clip: text;
+    color: transparent;
+    margin-top: 357px;
+  }
+  .fourthsection-row {
+    width: 100vw;
+    margin-bottom: 12px;
+    position: relative;
+
+    /* display: block; */
+  }
   #section1 {
-    background-image: url(./pic1.png);
+    display: none;
+  }
+  #tabletsection1 {
+    background-image: url(./listen.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -754,31 +878,65 @@ h1 {
     background-repeat: no-repeat;
     height: 490px;
     flex: 1;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     gap: 16px;
   }
-  #multisections2 {
+  #tabletsection3 {
+    background-image: url(./pic5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    justify-content: start;
   }
   #section4 {
-    background-image: url(./pic4.png);
+    background-image: url(./woman.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 490px;
     flex: 1;
     color: #ffffff;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     justify-content: end;
   }
+  #tabletsection4 {
+    background-image: url(./woman.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
   #section5 {
     background-image: url(./pic5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+  #tabletsection5 {
+    background-image: url(./calls.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -797,8 +955,62 @@ h1 {
     background-repeat: no-repeat;
     height: 490px;
     flex: 1;
+    display: none;
   }
+  #tabletsection6 {
+    background-image: url(./pic3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  #title33 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 58px;
+  }
+  #trade33 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  #phone33 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 8px;
+  }
+  #get33 {
+    display: flex;
 
+    text-align: center;
+    font-weight: 300;
+  }
+  #buttons33 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #0071e3;
+    align-items: center;
+    height: 36px;
+    width: 150px;
+    border-radius: 9999px;
+    color: #ffffff;
+  }
+  #write1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+  }
   #title1 {
     font-family: "Inter", sans-serif;
     display: flex;
@@ -806,15 +1018,817 @@ h1 {
     align-items: center;
 
     gap: 8px;
-    margin-top: 46px;
+    margin-top: 287px;
+  }
+
+  #type1 {
+    font-family: "Inter", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 62px;
+    margin-left: 63px;
+  }
+  #buttons1 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    display: flex;
+    gap: 16px;
+  }
+  #b1 {
+    color: #ffffff;
+    background-color: #0071e3;
+    border-radius: 999px;
+    height: 36px;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #b2 {
+    color: #2997ff;
+    background: none;
+    border-radius: 999px;
+    border: #2997ff solid;
+    height: 36px;
+    width: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    background: linear-gradient(
+      90.43deg,
+      #0090f7 0%,
+      #ba62fc 33.33%,
+      #f2416b 66.67%,
+      #f55600 100%
+    );
+    background-clip: text;
+    color: transparent;
+    margin-top: 234px;
+  }
+  #title2 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+    margin-top: 58px;
+  }
+  #iwatch {
+    display: flex;
+    gap: 8px;
+  }
+  #logo1 {
+    height: 32px;
+    width: 26.35293960571289;
+    background-position: center;
+  }
+  #type2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  #type3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 100%;
+  }
+  #type4 {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  #buttons2 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+  }
+  #b3 {
+    color: #ffffff;
+    background-color: #0071e3;
+    border-radius: 999px;
+    height: 36px;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #b4 {
+    color: #2997ff;
+    background: none;
+    border-radius: 999px;
+    border: #2997ff solid;
+    height: 36px;
+    width: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo33 {
+    height: 32px;
+    width: 26.35293960571289;
+    padding-bottom: 5px;
+  }
+  #phone {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+  }
+  #title3 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 58px;
+  }
+  #trade {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  #get {
+    display: flex;
+
+    text-align: center;
+    font-weight: 300;
+  }
+  #buttons3 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #0071e3;
+    align-items: center;
+    height: 40px;
+    width: 167px;
+    border-radius: 9999px;
+    color: #ffffff;
+  }
+  #title4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    margin-left: 55px;
+    margin-right: 54px;
+    text-align: center;
+  }
+  #airpod {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #hear {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  #buttons4 {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    gap: 16px;
+  }
+  #but1 {
+    height: 36px;
+    width: 107px;
+    background-color: #0071e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    color: #ffffff;
+  }
+  #but2 {
+    color: #0071e3;
+    height: 40px;
+    width: 68px;
+    background: none;
+    border: #0071e3 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #box4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 54px;
+  }
+  #title55 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+  }
+  #macbook55 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #lean55 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+  #buttons55 {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    gap: 16px;
+  }
+  #but35 {
+    height: 36px;
+    width: 107px;
+    color: #ffffff;
+    background-color: #0071e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #but45 {
+    color: #0090f7;
+    height: 36px;
+    width: 66px;
+    background: none;
+    border: #0090f7 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #title5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+  }
+  #macbook {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #lean {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+  #buttons5 {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    gap: 16px;
+  }
+  #but3 {
+    height: 36px;
+    width: 126px;
+    color: #ffffff;
+    background-color: #0071e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #but4 {
+    color: #0090f7;
+    height: 40px;
+    width: 68px;
+    background: none;
+    border: #0090f7 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #box55 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 42px;
+  }
+  #box5 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 296px;
+  }
+  #title6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+  }
+  #card {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #cash {
+    font-size: 18px;
+    font-weight: 300;
+
+    text-align: center;
+  }
+  #buttons6 {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    gap: 16px;
+  }
+  #but5 {
+    height: 36px;
+    width: 19px;
+    color: #ffffff;
+    background-color: #0071e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #but6 {
+    color: #0090f7;
+    height: 36px;
+    width: 126px;
+    background: none;
+    border: #0090f7 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #box6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 48px;
+  }
+  #logo6 {
+    height: 32px;
+    width: 26.35293960571289;
+    padding-top: 4px;
+  }
+  #applepay {
+    display: flex;
+  }
+
+  .desktopthird {
+    display: none;
+  }
+
+  .thirdsection-tablet-text {
+    display: flex;
+  }
+  #fifthsection {
+    height: 368px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #sixth {
+    height: 161px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #imagecontainer22 {
+    display: none;
+  }
+}
+/* .FORPHONE */
+@media only screen and (max-width: 1023px) {
+  .nav-item {
+    display: none;
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #menu {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  #apple {
+    display: flex;
+    padding-left: 17px;
+  }
+  #herosection {
+    height: 500px;
+    width: 100vw;
+    background-image: url(./phonepro.jpg);
+    background-repeat: no-repeat;
+  }
+  #texts1 {
+    font-family: "Inter", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 350px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+  #pads {
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+  }
+  #p1 {
+    height: 36px;
+    width: 107px;
+    color: #ffffff;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    border-radius: 999px;
+    text-align: center;
+    align-content: center;
+  }
+  #p2 {
+    color: #0071e3;
+    background: none;
+    border: #0071e3 solid;
+    height: 34px;
+    width: 66px;
+    border-radius: 999px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    align-content: center;
+  }
+  #secondsection {
+    height: 500px;
+    background-image: url(./phone16.png);
+    background-repeat: no-repeat;
+  }
+  #texts2 {
+    font-family: "Inter", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 55px;
+  }
+  #w1 {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+  #w2 {
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+  }
+  #pads2 {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #p3 {
+    height: 36px;
+    width: 107px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    align-content: center;
+
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    border-radius: 999px;
+  }
+  #p4 {
+    color: #ffffff;
+    background: none;
+    border: #ffffff solid;
+    border-radius: 999px;
+    font-family: "Inter", sans-serif;
+    height: 36px;
+    width: 66px;
+    text-align: center;
+    align-content: center;
+  }
+  #thirdsection {
+    background-image: url(./ipadthird.jpg);
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+  }
+  #tabsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    height: 500px;
   }
   #ipad {
     height: 33px;
     display: flex;
   }
-  #type1 {
+  #high1 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+    margin-top: 58px;
+  }
+  #click1 {
     font-family: "Inter", sans-serif;
     color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+  }
+  #touch1 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    display: flex;
+    gap: 16px;
+  }
+  #t1 {
+    color: #ffffff;
+    background-color: #0071e3;
+    border-radius: 999px;
+    height: 36px;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #t2 {
+    color: #2997ff;
+    background: none;
+    border-radius: 999px;
+    border: #2997ff solid;
+    height: 36px;
+    width: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #colorful {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: linear-gradient(
+      90.43deg,
+      #0090f7 0%,
+      #ba62fc 33.33%,
+      #f2416b 66.67%,
+      #f55600 100%
+    );
+    background-clip: text;
+    color: transparent;
+    margin-top: 214px;
+  }
+  .fourthsection-row {
+    width: 100vw;
+    margin-bottom: 12px;
+    flex-direction: column;
+    /* display: block; */
+  }
+  #section1 {
+    display: none;
+  }
+  #tabletsection1 {
+    background-image: url(./pholisten.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section2 {
+    background-image: url(./phowatch.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  #buttons2 {
+    margin-bottom: 319px;
+  }
+
+  #section3 {
+    background-image: url(./pic3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  #tabletsection3 {
+    background-image: url(./pic5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+  #buttons55 {
+    margin-bottom: 319px;
+  }
+  #section4 {
+    background-image: url(./woman.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #ffffff;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end;
+  }
+  #tabletsection4 {
+    background-image: url(./woman.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+  #buttons4 {
+    margin-bottom: 319px;
+  }
+  #section5 {
+    background-image: url(./pic5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+  #tabletsection5 {
+    background-image: url(./calls.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+  #buttons5 {
+    margin-bottom: 47px;
+  }
+  #section6 {
+    background-image: url(./pic6.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    display: none;
+  }
+  #tabletsection6 {
+    background-image: url(./pic3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  #buttons33 {
+    margin-bottom: 319px;
+  }
+  #title33 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 58px;
+  }
+  #trade33 {
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  #phone33 {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+  }
+  #get33 {
+    display: flex;
+
+    text-align: center;
+    font-weight: 300;
+  }
+  #buttons33 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #0071e3;
+    align-items: center;
+    height: 36px;
+    width: 150px;
+    border-radius: 9999px;
+    color: #ffffff;
+  }
+  #write1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #title1 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+    margin-top: 287px;
+  }
+
+  #type1 {
+    font-family: "Inter", sans-serif;
+    color: white;
     display: flex;
     flex-direction: column;
     font-size: 18px;
@@ -911,8 +1925,8 @@ h1 {
     color: #ffffff;
     background-color: #0071e3;
     border-radius: 999px;
-    height: 40px;
-    width: 115px;
+    height: 36px;
+    width: 107px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -922,13 +1936,13 @@ h1 {
     background: none;
     border-radius: 999px;
     border: #2997ff solid;
-    height: 40px;
-    width: 68px;
+    height: 36px;
+    width: 66px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #logo2 {
+  #logo33 {
     height: 32px;
     width: 26.35293960571289;
     padding-bottom: 5px;
@@ -975,6 +1989,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     font-family: "Inter", sans-serif;
+    margin-left: 55px;
+    margin-right: 54px;
+    text-align: center;
   }
   #airpod {
     font-size: 36px;
@@ -991,13 +2008,14 @@ h1 {
     gap: 16px;
   }
   #but1 {
-    height: 40px;
-    width: 115px;
+    height: 36px;
+    width: 107px;
     background-color: #0071e3;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 999px;
+    color: #ffffff;
   }
   #but2 {
     color: #0071e3;
@@ -1014,13 +2032,56 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 58px;
+    margin-top: 54px;
+  }
+  #title55 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+  }
+  #macbook55 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #lean55 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  #buttons55 {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    gap: 16px;
+  }
+  #but35 {
+    height: 36px;
+    width: 107px;
+    color: #ffffff;
+    background-color: #0071e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+  }
+  #but45 {
+    color: #0090f7;
+    height: 36px;
+    width: 66px;
+    background: none;
+    border: #0090f7 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
   }
   #title5 {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Inter", sans-serif;
+    text-align: center;
   }
   #macbook {
     font-size: 36px;
@@ -1029,6 +2090,8 @@ h1 {
   #lean {
     font-size: 18px;
     font-weight: 300;
+    margin-left: 26px;
+    margin-right: 26px;
   }
   #buttons5 {
     display: flex;
@@ -1037,8 +2100,8 @@ h1 {
     gap: 16px;
   }
   #but3 {
-    height: 40px;
-    width: 115px;
+    height: 36px;
+    width: 126px;
     color: #ffffff;
     background-color: #0071e3;
     display: flex;
@@ -1057,11 +2120,17 @@ h1 {
     align-items: center;
     border-radius: 999px;
   }
+  #box55 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 42px;
+  }
   #box5 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 48px;
+    margin-top: 296px;
   }
   #title6 {
     display: flex;
@@ -1086,8 +2155,8 @@ h1 {
     gap: 16px;
   }
   #but5 {
-    height: 40px;
-    width: 115px;
+    height: 36px;
+    width: 19px;
     color: #ffffff;
     background-color: #0071e3;
     display: flex;
@@ -1097,8 +2166,8 @@ h1 {
   }
   #but6 {
     color: #0090f7;
-    height: 40px;
-    width: 68px;
+    height: 36px;
+    width: 126px;
     background: none;
     border: #0090f7 solid;
     display: flex;
@@ -1120,4 +2189,153 @@ h1 {
   #applepay {
     display: flex;
   }
+
+  .desktopthird {
+    display: none;
+  }
+
+  .thirdsection-tablet-text {
+    display: flex;
+  }
+  #fifthsection {
+    height: 496px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #imagecontainer {
+    height: 668px;
+    width: inherit;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    display: flex;
+  }
+
+  #imagecontainer img {
+    height: 100%;
+    width: 274px;
+    scroll-snap-align: center;
+    object-fit: cover;
+  }
+  #dots {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 12px;
+  }
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 50%;
+  }
+  .dot:hover {
+    background-color: #3f3f3f;
+  }
+  #sixth {
+    height: 134px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #imagecontainer2 {
+    display: none;
+  }
+  #imagecontainer22 {
+    height: 134px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    display: flex;
+  }
+
+  .tom-image {
+    width: 238px;
+    height: 134px;
+    flex-shrink: 0;
+    /* scroll-snap-align: center; */
+    position: relative;
+  }
+
+  #y1 {
+    position: relative;
+  }
+  #x1 {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .x2 {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .y4 {
+    width: 238px;
+    height: 134px;
+    flex-shrink: 0;
+    display: flex;
+    background-color: rgba(27, 38, 50, 1);
+    align-items: center;
+    gap: 12px;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+  }
+
+  .m1 {
+    height: 114px;
+    width: 114px;
+    margin-left: 12px;
+  }
+  .m1 img {
+    height: 114px;
+    width: 114px;
+
+    border-radius: 8px;
+  }
+  .y3 {
+    width: 238px;
+    height: 134px;
+    flex-shrink: 0;
+    display: flex;
+    background-color: rgb(237, 220, 191);
+    align-items: center;
+    gap: 12px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .m2 {
+    height: 114px;
+    width: 114px;
+    padding-left: 12px;
+    border-radius: 8px;
+  }
+  .m2 img {
+    height: 114px;
+    width: 114px;
+
+    border-radius: 8px;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
